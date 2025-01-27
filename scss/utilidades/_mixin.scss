@@ -1,0 +1,11 @@
+@mixin medidas ($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+
+}
+@mixin logo ($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+//aca solo se ponen los parametros que se necesiten, si no se necesitan todos los parametros, se pueden omitir, pero se deben poner en el orden que se declararon en el mixin. (recordar el orden ejemplo margin va primero y paffing segundo , entonces a la hora de usarlo en scss colocamos @include reset(0,0); solo los numeros ya que esta ya declarado el orden en el archivo mixin)

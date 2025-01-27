@@ -1,0 +1,38 @@
+//lista de colores
+
+$list-colors: //lista de colores 
+ (
+  rgb(36, 36, 41),
+  rgb(134, 26, 26),
+  rgb(212, 179, 71),
+  rgb(255, 255, 255),
+);
+$list-fonts://tipografias
+ (
+  'Arial',
+  'Verdana',
+  'Helvetica',
+  'Tahoma',
+  'Trebuchet MS',
+  'Times New Roman',
+  'Georgia',
+  'Garamond',
+  'Courier New',
+  'Brush Script MT',
+  'Comic Sans MS',
+  'Impact',
+  'Lucida Console',
+  'Lucida Sans Unicode',
+  'Palatino Linotype',
+  'Symbol',
+  'Webdings',
+  'Wingdings',
+  'MS Sans Serif',
+  'MS Serif',
+  'MS Gothic',
+  'MS Mincho',)
+
+//crea todas las listas necesarias para el proyecto, con los colores que se necesiten, para que se puedan usar en cualquier parte del proyecto,
+//de esta manera se evita tener que estar escribiendo los colores en cada parte del proyecto, y si se necesita cambiar un color, solo se cambia en un lugar
+// asi como se hizo la lista de colores crea una lista de fuentes, de tamaños de fuentes, de espacios, de bordes,etc los que necesitees cada unos con su etiqueta "$nombre-lista" por ejemplo 
+// $list-fonts, $list-sizes, $list-spaces, $list-borders, etc. 

@@ -1,0 +1,43 @@
+// Importa todos los archivos de la carpeta utilidades, y luego importa el archivo que necesites .
+// siempre importa si no no se va a reflejar en tu CSS.
+@import 'utilidades/lista';
+@import "utilidades/mixin";
+
+*{ @include medidas (0,0); box-sizing: border-box;
+flex-wrap: nowrap;}
+header{
+  background-color: nth($list-colors, 1);
+}
+ h1{
+    color: nth($list-colors, 2); 
+    font-family: nth($list-fonts, 5);
+    text-align: center;
+  }
+
+   main p {
+padding: 1%;
+margin: 1%;
+    } //CORREGIR Y USAR MIXIN PARA ESTO
+    
+body{
+    @include medidas (0,0); //mixin
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(160, 154, 146, 0.695) 20%, rgb(243, 172, 18) 80%);;
+}
+footer{ text-align:center ;}
+ul li { list-style: none;} 
+.logo 
+   { @include logo (20%,20%);  
+    border-radius: 55%;}
+button{ @include logo (15,10);
+  background-color: nth($list-colors, 1);
+  border: 1px solid nth($list-colors, 4);
+  cursor: pointer;
+&:hover {
+    background-color: nth($list-colors, 2);
+    color: nth($list-colors, 4);
+  }
+}
+//mixin
+ //PARA LLAMAR A MIXIN SE HACE DE LA SIGUIENTE MANERA @include "nombre DEL ARICHIVO EJEMPLO " mixin(parametro1, parametro2, parametro3, etc); "solo los numeros de los parametros.
+ // FALTA APLICAR ANIMACIONES , APLICAR FLEXBOX, GRID. 
